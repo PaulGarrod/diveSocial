@@ -17,4 +17,8 @@ export default makeStyles(() => ({
         height: '250px',
         borderRadius: '7px',
     },
+    cardActions: {
+        justifyContent: 'space-between',
+        paddingTop: '15px',
+    },
 }))

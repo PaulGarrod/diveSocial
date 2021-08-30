@@ -22,18 +22,20 @@ const App = () => {
     return (
         <Container className={classes.container} maxwidth='lg'>
             <AppBar className={classes.appBar} position='static' color='inherit'>
-                <Typography className={classes.heading} variant='h2' align='center'>Divers Log Wellington</Typography>
+                <Typography color='primary' variant='h2' align='center'>Social Divers Log</Typography>
             </AppBar>
-                <Typography className={classes.font} variant='subtitle1' align='center'>Where Local Diver's Connect</Typography>
-                <img className={classes.image} src={diveImg} alt='Two divers seated'/>
+                <Typography className={classes.font} variant='subtitle1' align='center'>
+                    A free space for divers to log dives and share their experiences.
+                </Typography>
+                {/* <img className={classes.image} src={diveImg} alt='Two divers seated'/> */}
             <Grow in>
-                <Container>
+                <Container className={classes.cardContainer}>
                     <Grid container justifyContent='space-between' align-items='stretch' spacing={3}>
-                        <Grid item xs={12} sm={8}>
-                            <Posts setCurrentId={setCurrentId} />
-                        </Grid>
                         <Grid item xs={12} sm={4}>
                             <Form currentId={currentId} setCurrentId={setCurrentId} />
+                        </Grid>
+                        <Grid item xs={12} sm={8}>
+                            <Posts setCurrentId={setCurrentId} />
                         </Grid>
                     </Grid>
                 </Container>

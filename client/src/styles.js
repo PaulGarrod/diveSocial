@@ -5,13 +5,14 @@ export default makeStyles(() => ({
         display: 'flex',
         flexDirection: 'column',
     },
+    cardContainer: {
+        marginTop: '24px',
+    },
     appBar: {
         borderRadius: 15,
-        margin: '30 px 0',
+        margin: '40px 0',
+        padding: '40px',
         justifyContent: 'center',
-    },
-    heading: {
-        color: 'rgba(0,183,255,1)',
     },
     font: {
         display: 'flex',
