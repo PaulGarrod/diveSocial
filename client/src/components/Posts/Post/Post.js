@@ -27,7 +27,7 @@ const Post = ({ post, setCurrentId }) => {
                 <Typography variant='h6' className={classes.postEntry}>Location: {post.location}</Typography>
                 <Typography variant='body1' className={classes.postEntry}>Maximum Depth: {post.maxDepth}</Typography>
                 <Typography variant='body1' className={classes.postEntry}>Dive Duration: {post.duration}</Typography>
-                { post.buddy != false && <Typography variant='body1' className={classes.postEntry}>Buddy: {post.buddy}</Typography> }
+                { post.buddy !== false && <Typography variant='body1' className={classes.postEntry}>Buddy: {post.buddy}</Typography> }
                 {/* { post.notes && <Typography variant='body2' className={classes.postEntry}>Notes: {post.notes}</Typography> } */}
                 <Typography variant='body1' className={classes.postEntry}>Dive Logged: {moment(post.createdAt).fromNow()}</Typography>
             </div>
